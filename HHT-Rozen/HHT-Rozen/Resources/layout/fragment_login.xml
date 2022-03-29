@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:id="@+id/linearLayout2"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_weight="1"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="センターコード"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView1"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/soukoCode"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_weight="1"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tv_login_soukoName"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ff0d47a1" />
+    <TextView
+        android:text="担当者コード"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/tantoCode"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_weight="1"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        style="@style/wrapping_button"
+        android:text="ログイン"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+        android:layout_marginRight="0dp"
+		android:layout_weight="1"
+        android:textSize="20dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:roundedCorners="true" />
+	<TextView
+        android:text="Version 0.65"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+        android:id="@+id/versionName"
+        android:layout_marginTop="0dp"
+        android:textSize="15sp" />
+</LinearLayout>

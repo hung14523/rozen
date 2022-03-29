@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/venderListGridLayout"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:columnCount="3">
+        <TextView
+            android:text="納品\n予定"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ff0d47a1"
+            android:id="@+id/textView8"
+            android:layout_width="80dp" />
+        <TextView
+            android:text="店舗"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ff0d47a1"
+            android:id="@+id/textView9"
+            android:layout_width="140dp" />
+        <TextView
+            android:text="コース"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ff0d47a1"
+            android:id="@+id/textView8"
+            android:layout_width="90dp" />
+    </GridLayout>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="#ccaa00"
+        android:layout_weight="1" />
+</LinearLayout>

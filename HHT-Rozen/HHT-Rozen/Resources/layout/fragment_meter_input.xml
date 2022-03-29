@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center_vertical|left">
+    <TextView
+        android:text="@string/syuka_meter"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_meterInput_startMeter"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="fill_horizontal"
+        android:textColor="@android:color/black"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl" />
+    <TextView
+        android:visibility="gone"
+        android:text="@string/kichaku_meter"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_meterInput_endMeter"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="fill_horizontal"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl" />
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:text="@string/kyuyu_ryo"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_meterInput_kyuyu"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="fill_horizontal"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        style="@style/wrapping_button"
+        android:text="@string/button_confirm"
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="0dp"
+        android:textSize="20dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:roundedCorners="true" />
+</LinearLayout>

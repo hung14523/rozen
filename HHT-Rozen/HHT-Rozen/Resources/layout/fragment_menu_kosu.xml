@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="80dp"
+    >
+    <Button
+        android:text="かご車"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="80px"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:id="@+id/arataCaseInspButton" />
+    <Button
+        android:text="キャリー"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10px"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="30px"
+        android:id="@+id/arataOriconInspButton" />
+</LinearLayout>

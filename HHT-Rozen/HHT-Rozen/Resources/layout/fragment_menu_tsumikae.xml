@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|left"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="30dp">
+    <Button
+        android:text="単品移動"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/btn_tsumikaeMenu_tanpin"
+        android:paddingStart="20dp"
+        android:textAlignment="textStart"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+    <Button
+        android:text="全品移動"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:textAlignment="textStart"
+        android:id="@+id/btn_tsumikaeMenu_zenpin" />
+    <Button
+        android:text="マテハン変更"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:textAlignment="textStart"
+        android:id="@+id/btn_tsumikaeMenu_matehan" />
+</LinearLayout>

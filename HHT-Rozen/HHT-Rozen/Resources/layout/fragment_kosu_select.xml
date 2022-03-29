@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center_vertical|left">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="配送日"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView1" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/todoke_et_deliveryDate"
+        android:inputType="date"
+        android:hint="yyyyMMdd"
+        android:layout_marginBottom="10dp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl" 
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:inputType="date"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_cust"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:text="確定"
+        android:id="@+id/btn_todoke_confirm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:roundedCorners="true" />
+
+</LinearLayout>

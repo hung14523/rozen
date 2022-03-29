@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center_vertical|left">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gl_kosuSelect_Todoke"
+        android:columnCount="2">
+        <TextView
+            android:text="配送日"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1" />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/et_tsumikomiSelect_syukaDate"
+            android:inputType="date"
+            android:hint="yyyyMMdd"
+            android:layout_columnSpan="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl" />
+        <TextView
+            android:text="コース"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/textView2" />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/et_tsumikomiSelect_course"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="10dp"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl" />
+        <TextView
+            android:text="便"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/textView3" />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/et_tsumikomiSelect_bin"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginBottom="10dp"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl" />
+    </GridLayout>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        style="@style/wrapping_button"
+        android:text="確定"
+        android:id="@+id/btn_tsumikomiSelect_confirm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:roundedCorners="true" />
+</LinearLayout>
